@@ -18,7 +18,10 @@ Method
  - First goes to player code,player keypoint is: left/right movement
  - 
  - Enemy Code
-~~~~~ class Enemy(Sprite):
+
+
+~~~python
+class Enemy(Sprite):
     def on_create(self):
         self.scale=1
         self.rotation=180
@@ -42,9 +45,12 @@ Method
         if self.is_dying:
             self.rotation+=5
             self.scale+=5
- ~~~~~
+~~~
+ 
   - Bullet Code
-  ~~~~~ class Bullet(Sprite):
+  
+~~~python
+  class Bullet(Sprite):
     def on_create(self):
         
         self.scale=50
@@ -66,10 +72,10 @@ Method
                 if enemy.image.replace('.png','') in se.image :
                     enemy.is_dying=True
                     Scheduler.wait(1,enemy.delete)
-   ~~~~~       
+~~~       
    
-   Resources
-   -----
-     - [pycat/python](https://www.python.org/)
-     
-     - [visual studio code](https://code.visualstudio.com/)
+Resources
+-----
+
+  - [pycat/python](https://www.python.org/)
+  - [visual studio code](https://code.visualstudio.com/)
