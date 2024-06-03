@@ -6,5 +6,5 @@ It's a game for those who think learning English is boring, this game contains t
 
 Features
 ------
--cute charactor
--
+  - cute charactor
+-f
