@@ -60,7 +60,9 @@ game_map = [['0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'
             ['1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1'],
             ['1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1','1']]
 ~~~
+
 - Blood
+
 ~~~python
 lost_health_width = health_bar_width * (1 - (self.current_health / self.max_health))
 lost_health_rect = pygame.Rect(health_bar_x + health_bar_width - lost_health_width, health_bar_y, lost_health_width, health_bar_height)
@@ -73,7 +75,9 @@ current_health_rect = pygame.Rect(health_bar_x, health_bar_y, current_health_wid
 health_bar_outline_rect = pygame.Rect(health_bar_x, health_bar_y, health_bar_width, health_bar_height)
         pygame.draw.rect(screen, (255,255,255), health_bar_outline_rect, 2)
 ~~~
+
 - Hint
+
 ~~~python
 hints = [
     {
